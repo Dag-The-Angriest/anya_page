@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--============ UNICONS ================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+        <!--=========== SWIPER CSS ==============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--============ CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        
+
+        <script type="module">
+            import PhotoSwipeLightbox from "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.6/photoswipe-lightbox.esm.min.js";
+            const lightbox = new PhotoSwipeLightbox({
+              gallery: "#gallery--getting-started",
+              children: "a",
+              pswpModule: () => import("https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.6/photoswipe.esm.min.js")
+            });
+            lightbox.init();
+          </script>
+      
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.6/photoswipe.min.css" 
+          integrity="sha512-LFWtdAXHQuwUGH9cImO9blA3a3GfQNkpF2uRlhaOpSbDevNyK1rmAjs13mtpjvWyi+flP7zYWboqY+8Mkd42xA==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <title>Hani Photo | Portfolio</title>
+
+        <!-- <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const selector = '.nav__link';
+            const elems = Array.from( document.querySelectorAll( selector ) );
+            const navigation = document.querySelector( 'nav' );
+
+            function makeActive( evt ) {
+            const target = evt.target;
+
+            if ( !target || !target.matches( selector ) ) {
+            return;
+            }
+
+            elems.forEach( elem => elem.classList.remove( 'active' ) );
+
+            evt.target.classList.add( 'active' );
+            };
+
+            navigation.addEventListener( 'mousedown', makeActive );
+
+            } );
+        </script> -->
+
+        <!-- <script>
+            // const selector = '.nav__item';
+            const anchors = Array.from(document.querySelectorAll( 'a' ));
+
+            anchors.forEach(a => {
+            a.addEventListener('click', function(e) {
+                anchors.forEach(a => {
+                    a.classList.remove('is-active')
+            })
+
+            e.currentTarget.classList.add('is-active')
+            })  
+            })
+        </script> -->
+        <script>
+            const anchors = Array.from(document.querySelectorAll('a'))
+
+anchors.forEach(a => {
+  a.addEventListener('click', function(e) {
+    anchors.forEach(a => {
+      a.classList.remove('is-active')
+    })
+
+    e.currentTarget.classList.add('is-active')
+  })  
+})
+        </script>
+        <script src="assets/js/bold_text.js"></script>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav__container nav container">
+                <div class="nav__name">
+                    <a href="index.html" class="nav__link active-link label">
+                        <img src="assets/img/elements/name.png" alt="" class="name__img">
+                    </a>
+                </div>
+                <div class="nav__logo">
+                    <a href="index.html">
+                        <img src="assets/img/elements/avatar.jpg" alt="" class="nav__img">
+                    </a>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item ">
+                            <a href="index.html" style="visibility: hidden; font-weight: bold;">Home</a>
+                            <a href="index.html" class="nav__link active-link label">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="portfolio.html" style="visibility: hidden; font-weight: bold;">Portfolio</a>
+                            <a href="portfolio.html" class="nav__link active-link label">Portfolio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="about.html" style="visibility: hidden; font-weight: bold;">About</a>
+                            <a href="about.html" class="nav__link active-link label">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="info.html" style="visibility: hidden; font-weight: bold;">Info</a>
+                            <a href="info.html" class="nav__link active-link label">Info</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="photoshoot__titles container">
+                <a href="portfolio_portrait.html">
+                    <h2 class="photoshoot__title center">Portrait</h2>
+                </a>
+                <a href="portfolio_studio.html">
+                    <h2 class="photoshoot__title center">Studio</h2>
+                </a>
+                <a href="portfolio_creative.html">
+                    <h2 class="photoshoot__title center">Creative</h2>
+                </a>
+                <a href="portfolio_photo_reportage.html">
+                    <h2 class="photoshoot__title center">Photo Reportage</h2>
+                </a>
+                <a href="portfolio_photowalk.html">
+                    <h2 class="photoshoot__title center">Photowalk</h2>
+                </a>
+                <a href="portfolio_wedding.html">
+                    <h2 class="photoshoot__title center">Wedding</h2>
+                </a>
+                <a href="portfolio_love_story.html">
+                    <h2 class="photoshoot__title center">Love Story</h2>
+                </a>
+            </div>
+
+            <div class="photo__gallery container grid" id="gallery">
+                <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                    <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" 
+                        data-pswp-width="1669" 
+                        data-pswp-height="2500" 
+                        target="_blank">
+                        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt="" />
+                    </a>
+                    <a class="gallery-1 o gallery__item" href="assets/img/DSC_4523.jpg" 
+                        data-pswp-width="866" 
+                        data-pswp-height="1299" 
+                        target="_blank">
+                        <img class="gallery__img" src="assets/img/DSC_4523-small.jpg" alt="" />
+                    </a>
+                    <a class="gallery-2 t gallery__item" href="assets/img/DSC_5573.jpg" 
+                        data-pswp-width="866" 
+                        data-pswp-height="1299" 
+                        target="_blank">
+                        <img class="gallery-2 gallery__img" src="assets/img/DSC_5573-small.jpg" alt="" />
+                    </a>
+                    <a class="gallery-3 th gallery__item" href="assets/img/DSC_5756-восстановлено.jpg" 
+                        data-pswp-width="5874" 
+                        data-pswp-height="3468" 
+                        target="_blank">
+                        <img class="gallery-3 gallery__img" src="assets/img/DSC_5756-восстановлено-small.jpg" alt="" />
+                    </a>
+                    <a class="gallery-4 f gallery__item" href="assets/img/DSC_6193.jpg" 
+                        data-pswp-width="1949" 
+                        data-pswp-height="1299" 
+                        target="_blank">
+                        <img class="gallery-4 gallery__img" src="assets/img/DSC_6193-small.jpg" alt="" />
+                    </a>
+                    <a class="gallery-5 fi gallery__item" href="assets/img/DSC_6862.jpg" 
+                        data-pswp-width="1949" 
+                        data-pswp-height="1299" 
+                        target="_blank">
+                        <img class="gallery-5 gallery__img" src="assets/img/DSC_6862-small.jpg" alt="" />
+                    </a>
+                    <a class="gallery-6 s gallery__item" href="assets/img/DSC_8709.jpg" 
+                        data-pswp-width="1403" 
+                        data-pswp-height="1215" 
+                        target="_blank">
+                        <img class="gallery-6 gallery__img" src="assets/img/DSC_8709-small.jpg" alt="" />
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__border container grid">
+                <img src="assets/img/elements/s-1.svg" alt="" class="footer__img">
+                <img src="assets/img/elements/logo.png" alt="" class="footer__logo">
+            </div>
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <!-- <div>
+                        <h1 class="footer__title">Anna</h1>
+                        <span class="footer__subtitle">Photographer</span>
+                    </div> -->
+
+                    
+
+                    <div class="footer__socials">
+                        <a href="https://facebook.com/" target="_blank" class="footer__social">
+                            <img src="assets/img/elements/facebook-logo.png" alt="" class="social__img">
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                            <img src="assets/img/elements/instagram-logo.png" alt="" class="social__img">
+                        </a>
+
+                        <a href="https://telegram.org/" target="_blank" class="footer__social">
+                            <img src="assets/img/elements/telegram-logo.png" alt="" class="social__img">
+                        </a>
+                        <a href="https://behance.net" target="_blank" class="footer__social">
+                            <img src="assets/img/elements/behace-logo.png" alt="" class="social__img">
+                        </a>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="index.html" class="footer__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html" class="footer__link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="footer__link">About</a>
+                        </li>
+                        <li>
+                            <a href="info.html" class="footer__link">Info</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="footer__copy">&#169; Hani Photo. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

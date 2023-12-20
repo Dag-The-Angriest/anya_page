@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--============ UNICONS ================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+        <!--============ CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <script type="module">
+            import PhotoSwipeLightbox from "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.6/photoswipe-lightbox.esm.min.js";
+            const lightbox = new PhotoSwipeLightbox({
+              gallery: "#gallery--getting-started",
+              children: "a",
+              pswpModule: () => import("https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.6/photoswipe.esm.min.js")
+            });
+            lightbox.init();
+          </script>
+      
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.6/photoswipe.min.css" 
+          integrity="sha512-LFWtdAXHQuwUGH9cImO9blA3a3GfQNkpF2uRlhaOpSbDevNyK1rmAjs13mtpjvWyi+flP7zYWboqY+8Mkd42xA==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <title>Hani Photo</title>
+
+    </head>
+    <body>
+      <!--========== HEADER ==========-->
+        <header class="header" id="header">
+            <nav class="nav__container nav container">
+                <div class="nav__name">
+                    <a href="index.html" class="nav__link active-link label">
+                        <img src="assets/img/elements/name.png" alt="" class="name__img">
+                    </a>
+                </div>
+                <div class="nav__logo">
+                    <a href="index.html">
+                        <img src="assets/img/elements/avatar.jpg" alt="" class="nav__img">
+                    </a>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item ">
+                            <a href="index.html" style="visibility: hidden; font-weight: bold;">Home</a>
+                            <a href="index.html" class="nav__link active-link label">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="portfolio.html" style="visibility: hidden; font-weight: bold;">Portfolio</a>
+                            <a href="portfolio.html" class="nav__link active-link label">Portfolio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="about.html" style="visibility: hidden; font-weight: bold;">About</a>
+                            <a href="about.html" class="nav__link active-link label">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="info.html" style="visibility: hidden; font-weight: bold;">Info</a>
+                            <a href="info.html" class="nav__link active-link label">Info</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+      <!--========== MAIN ==========-->
+        <main>
+            <!-- <div class="home__container container">
+                <div class="home__content column__1">
+                    <img src="assets/img/Photos/wedding/wedding (1).jpg" alt="" class="grid__data">
+                    <img src="assets/img/Photos/wedding/wedding (4).jpg" alt="" class="grid__data">
+                    <img src="assets/img/Photos/wedding/wedding (7).jpg" alt="" class="grid__data">
+                </div>
+                <div class="home__content column__2">
+                    <img src="assets/img/Photos/wedding/wedding (2).jpg" alt="" class="grid__data">
+                    <img src="assets/img/Photos/wedding/wedding (5).jpg" alt="" class="grid__data">
+                </div>
+                <div class="home__content column__3">
+                    <img src="assets/img/Photos/wedding/wedding (3).jpg" alt="" class="grid__data">
+                    <img src="assets/img/Photos/wedding/wedding (6).jpg" alt="" class="grid__data">
+                </div>
+            </div> -->
+            <div class="photo__gallery container grid" id="gallery">
+                <div class="pswp-gallery-wedding pswp-gallery--single-column" id="gallery--getting-started">
+                    <a class="gallery-1 o gallery__item" href="assets/img/Photos/wedding/wedding (3).jpg" 
+                        data-pswp-width="4000" 
+                        data-pswp-height="6000" 
+                        target="_blank">
+                        <img class="gallery__img" src="assets/img/Photos/wedding/wedding (3).jpg" alt="" />
+                    </a>
+                    <a class="gallery-2 t gallery__item" href="assets/img/Photos/wedding/wedding (4).jpg" 
+                        data-pswp-width="4000" 
+                        data-pswp-height="6000" 
+                        target="_blank">
+                        <img class="gallery-2 gallery__img" src="assets/img/Photos/wedding/wedding (4).jpg" alt="" />
+                    </a>
+                    <a class="gallery-3 th gallery__item" href="assets/img/Photos/wedding/wedding (1).jpg" 
+                        data-pswp-width="4000" 
+                        data-pswp-height="6000" 
+                        target="_blank">
+                        <img class="gallery-3 gallery__img" src="assets/img/Photos/wedding/wedding (1).jpg" alt="" />
+                    </a>
+                    <a class="gallery-4 f gallery__item" href="assets/img/Photos/wedding/wedding (5).jpg" 
+                        data-pswp-width="6000" 
+                        data-pswp-height="4000" 
+                        target="_blank">
+                        <img class="gallery-4 gallery__img" src="assets/img/Photos/wedding/wedding (5).jpg" alt="" />
+                    </a>
+                    <a class="gallery-5 fi gallery__item" href="assets/img/Photos/wedding/wedding (7).jpg" 
+                        data-pswp-width="6000" 
+                        data-pswp-height="4000" 
+                        target="_blank">
+                        <img class="gallery-5 gallery__img" src="assets/img/Photos/wedding/wedding (7).jpg" alt="" />
+                    </a>
+                    <a class="gallery-6 s gallery__item" href="assets/img/Photos/wedding/wedding (2).jpg" 
+                        data-pswp-width="4000" 
+                        data-pswp-height="6000"  
+                        target="_blank">
+                        <img class="gallery-6 gallery__img" src="assets/img/Photos/wedding/wedding (2).jpg" alt="" />
+                    </a>
+                    <a class="gallery-7 se gallery__item" href="assets/img/Photos/wedding/wedding (6).jpg" 
+                        data-pswp-width="4000" 
+                        data-pswp-height="6000" 
+                        target="_blank">
+                        <img class="gallery-7 gallery__img" src="assets/img/Photos/wedding/wedding (6).jpg" alt="" />
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__border container grid">
+                <img src="assets/img/elements/s-1.svg" alt="" class="footer__img">
+                <img src="assets/img/elements/logo.png" alt="" class="footer__logo">
+            </div>
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <!-- <div>
+                        <h1 class="footer__title">Anna</h1>
+                        <span class="footer__subtitle">Photographer</span>
+                    </div> -->
+
+                    
+
+                    <div class="footer__socials">
+                        <a href="https://facebook.com/" target="_blank" class="footer__social">
+                            <img src="assets/img/elements/facebook-logo.png" alt="" class="social__img">
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                            <img src="assets/img/elements/instagram-logo.png" alt="" class="social__img">
+                        </a>
+
+                        <a href="https://telegram.org/" target="_blank" class="footer__social">
+                            <img src="assets/img/elements/telegram-logo.png" alt="" class="social__img">
+                        </a>
+                        <a href="https://behance.net" target="_blank" class="footer__social">
+                            <img src="assets/img/elements/behace-logo.png" alt="" class="social__img">
+                        </a>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="index.html" class="footer__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html" class="footer__link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="footer__link">About</a>
+                        </li>
+                        <li>
+                            <a href="info.html" class="footer__link">Info</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="footer__copy">&#169; Hani Photo. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>
